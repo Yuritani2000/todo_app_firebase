@@ -22,4 +22,7 @@ type FlexBoxProps = {
 export const FlexBox = styled.div<FlexBoxProps>(props => `
     width: ${props.width ? props.width + 'px' : '100%'};
     width: ${props.height ? props.height + 'px' : '100%'};
+    display: flex
+    flex-direction: ${props.flexDirection ? props.flexDirection : 'row'};
+    align-items: ${props.alignItems ? props.alignItems : 'center'} ;
 `);
